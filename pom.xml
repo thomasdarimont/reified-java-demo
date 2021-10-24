@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <java.version>17</java.version>
-        <reified.version>1.14</reified.version>
+        <java.version>15</java.version>
+        <reified.version>1.15</reified.version>
         <jackson.version>2.13.0</jackson.version>
     </properties>
 
@@ -43,6 +43,9 @@
                             <version>${reified.version}</version>
                         </path>
                     </annotationProcessorPaths>
+                    <compilerArgs>
+                        <compilerArg>--enable-preview</compilerArg>
+                    </compilerArgs>
                 </configuration>
             </plugin>
         </plugins>
